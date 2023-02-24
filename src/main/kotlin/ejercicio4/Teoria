@@ -1,0 +1,32 @@
+a) ¿Qué conseguimos si pusiéramos la anotación “fetch = FetchType.LAZY”?
+
+Significa que la información de la relación no se cargará hasta que sea requerida.
+
+
+
+b) ¿Qué hace la siguiente instrucción? @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+Significa que la generación del valor será automáticamente gestionada por Hibernate con un valor único
+
+
+
+c) Explica con tus palabras el término “Desfase Entidad-Relación”
+
+Ese término se refiere a la diferencia entre las relaciones de un modelo de datos y la implementación en un Sistema Gestor de BBDD.
+
+Puede ocurrir por diferentes razones como limitaciones de representaciones complejas de un modelo de datos y han de ser adaptadas.
+
+
+
+d) ¿Qué diferencia hay entre un objeto “managed” y un objeto “detached”?
+
+El objeto managed es un objeto que está siendo controlado y mantenido por EntityManager JPA a diferencia de el detached, que  es un objeto que ya no está siendo controlado por la instancia de EntityManager.
+
+
+
+
+e) ¿Qué hace el método “persist()” de JPA? ¿Nos devuelve algo ese método?
+
+Es el método utilizado para almacenar un objeto en la BBDD. Lo que hace es que el objeto se marca como managed y se incluye en el debido contexto.
+
+El método no devuelve nada.
